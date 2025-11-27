@@ -29,7 +29,7 @@ concurrency:
     
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-25.10
 
     container:
       image: docker.io/ifxmakers/makers-docker:latest
@@ -65,7 +65,7 @@ jobs:
   setupHilEnv:
     runs-on:
       - self-hosted
-      - X64
+      - ARM64
       - Linux
     needs: setup
     steps:
